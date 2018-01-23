@@ -9,6 +9,10 @@
 import Foundation
 
 class StoryQuestions {
+    // create an array to pull strings from
+    // var stories = [story1, story2, story3, story4, story5, story6]
+    
+    let stories = [Story]()
     
     // Our strings
     let story1 = "Your car has blown a tire on a winding road in the middle of nowhere with no cell phone reception. You decide to hitchhike. A rusty pickup truck rumbles to a stop next to you. A man with a wide brimmed hat with soulless eyes opens the passenger door for you and asks: \"Need a ride, boy?\"."

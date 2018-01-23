@@ -10,4 +10,11 @@ import Foundation
 
 class Story {
     
+    let storyText : String
+    let answerText : String
+    // story class should be initialized with a story number or String? and answer number or String?
+    init(story: String, answer: String){
+        storyText = story
+        answerText = answer
+    }
 }
