@@ -35,6 +35,29 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		472385DD2017DE1D006A634B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		472385DE2017DE35006A634B /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		472385DF2017DE42006A634B /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				EBB1C7421B9633A60011F5C3 /* ViewController.swift */,
+				EBB1C7401B9633A60011F5C3 /* AppDelegate.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
 		EBB1C7321B9633A60011F5C3 = {
 			isa = PBXGroup;
 			children = (
@@ -54,8 +77,9 @@
 		EBB1C73D1B9633A60011F5C3 /* Destini */ = {
 			isa = PBXGroup;
 			children = (
-				EBB1C7401B9633A60011F5C3 /* AppDelegate.swift */,
-				EBB1C7421B9633A60011F5C3 /* ViewController.swift */,
+				472385DF2017DE42006A634B /* Controller */,
+				472385DE2017DE35006A634B /* View */,
+				472385DD2017DE1D006A634B /* Model */,
 				EBB1C7441B9633A60011F5C3 /* Main.storyboard */,
 				EBB1C7471B9633A60011F5C3 /* Images.xcassets */,
 				EBB1C7491B9633A60011F5C3 /* LaunchScreen.xib */,
