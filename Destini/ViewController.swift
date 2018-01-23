@@ -9,6 +9,12 @@
 import UIKit
 
 class ViewController: UIViewController {
+    // display text of first story
+    // connect top button with "a" answers
+    // connect bottom button with "b" answers
+    // depending on if user selects answer a or answer b you will display corresponding story number
+    // stories do not go sequentially - the user's answer will determine the next story number to display 
+    // i.e. story1 is displayed > user selects answer1b > story
 
     // Our strings
     let story1 = "Your car has blown a tire on a winding road in the middle of nowhere with no cell phone reception. You decide to hitchhike. A rusty pickup truck rumbles to a stop next to you. A man with a wide brimmed hat with soulless eyes opens the passenger door for you and asks: \"Need a ride, boy?\"."
