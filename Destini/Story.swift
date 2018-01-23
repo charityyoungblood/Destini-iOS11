@@ -10,11 +10,13 @@ import Foundation
 
 class Story {
     
-    let storyText : String
+    let theStoryText : String
     let answerText : String
     // story class should be initialized with a story number or String? and answer number or String?
-    init(story: String, answer: String){
-        storyText = story
+    init(theStory: String, answer: String){
+        // assign the value that is passed through for story to storyText
+        // assign the value that is passed through for answerText to answer
+        theStoryText = theStory
         answerText = answer
     }
 }
