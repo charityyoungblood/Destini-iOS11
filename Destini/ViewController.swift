@@ -17,7 +17,12 @@ class ViewController: UIViewController {
     // note which selections go to which story numbers
     // story1 is first, at start of the game
     // i.e. story1 is displayed > user selects answer1b > story
-
+    let storyTime = FullStory()
+    var storyNumber : Int = 0 // keeps track of what story number we are on
+    
+    // what else will increase? need to keep track
+    
+    var answerNumber : Int = 0
     
     // UI Elements linked to the storyboard
     @IBOutlet weak var topButton: UIButton!         // Has TAG = 1
@@ -29,7 +34,8 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // update the storyTextView.text = display story1
-        storyTextView.text = allStories.list[0]
+        storyTextView.text = storyTime.allStories[storyNumber].theStoryText
+        storyNumber += 1
         
         // TODO Step 3: Set the text for the storyTextView, topButton, bottomButton, and to T1_Story, T1_Ans1, and T1_Ans2
         

@@ -13,8 +13,8 @@ class FullStory {
         // create an array to pull strings from
         //  allStories = [story1, story2, story3, story4, story5, story6]
         // allAnswers = [answer1a, answer1b, answer2a, answer2b, answer3a, answer3b]
-        let allStories = [Story]()
-        let allAnswers = [Answers]()
+        var allStories = [Stories]()
+        var allAnswers = [Answers]()
         
         let story1 = "Your car has blown a tire on a winding road in the middle of nowhere with no cell phone reception. You decide to hitchhike. A rusty pickup truck rumbles to a stop next to you. A man with a wide brimmed hat with soulless eyes opens the passenger door for you and asks: \"Need a ride, boy?\"."
         
@@ -39,12 +39,12 @@ class FullStory {
         
         
         init(){
-            allStories.append(Story(theStory: story1))
-            allStories.append(Story(theStory: story2))
-            allStories.append(Story(theStory: story3))
-            allStories.append(Story(theStory: story4))
-            allStories.append(Story(theStory: story5))
-            allStories.append(Story(theStory: story6))
+            allStories.append(Stories(theStory: story1))
+            allStories.append(Stories(theStory: story2))
+            allStories.append(Stories(theStory: story3))
+            allStories.append(Stories(theStory: story4))
+            allStories.append(Stories(theStory: story5))
+            allStories.append(Stories(theStory: story6))
             allAnswers.append(Answers(answer: answer1a))
             allAnswers.append(Answers(answer: answer1b))
             allAnswers.append(Answers(answer: answer2a))
@@ -67,4 +67,4 @@ class FullStory {
     }
 
 
-}
+
