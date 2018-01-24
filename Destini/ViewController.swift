@@ -45,11 +45,21 @@ class ViewController: UIViewController {
         // this method will show the next story
     }
     
+    // ***STORY FORMAT***
+        // if user selected answer1 > display story3
+        // if user selected answer2 > display story2
+    
+        // if user selected answer3 > display story3
+        // if user selected answer4 > display story4
+    
+        // if user selected answer5 > display story6
+        // if user selected answer6 > display story5
+    
     // User presses one of the buttons
     @IBAction func buttonPressed(_ sender: UIButton) {
         // if top button is selected story number will increase
         if sender.tag == 1 {
-        
+        // play story number - depending on user
         // TODO Step 4: Write an IF-Statement to update the views
         }
         // TODO Step 6: Modify the IF-Statement to complete the story
