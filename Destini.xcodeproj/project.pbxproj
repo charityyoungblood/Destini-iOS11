@@ -7,8 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		472385E12017DEDB006A634B /* Story.swift in Sources */ = {isa = PBXBuildFile; fileRef = 472385E02017DEDB006A634B /* Story.swift */; };
-		472385E32017DEFB006A634B /* StoryQuestions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 472385E22017DEFB006A634B /* StoryQuestions.swift */; };
+		9EC8D9452017F04D00830BF9 /* Answers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EC8D9442017F04D00830BF9 /* Answers.swift */; };
+		9EC8D9572018041D00830BF9 /* FullStory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EC8D9562018041D00830BF9 /* FullStory.swift */; };
+		9EC8D9592018047D00830BF9 /* Stories.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EC8D9582018047D00830BF9 /* Stories.swift */; };
 		EBB1C7411B9633A60011F5C3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBB1C7401B9633A60011F5C3 /* AppDelegate.swift */; };
 		EBB1C7431B9633A60011F5C3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBB1C7421B9633A60011F5C3 /* ViewController.swift */; };
 		EBB1C7461B9633A60011F5C3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EBB1C7441B9633A60011F5C3 /* Main.storyboard */; };
@@ -16,9 +17,22 @@
 		EBB1C74B1B9633A60011F5C3 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = EBB1C7491B9633A60011F5C3 /* LaunchScreen.xib */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		9EC8D94F2017F3E200830BF9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EBB1C7331B9633A60011F5C3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EBB1C73A1B9633A60011F5C3;
+			remoteInfo = Destini;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
-		472385E02017DEDB006A634B /* Story.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Story.swift; sourceTree = "<group>"; };
-		472385E22017DEFB006A634B /* StoryQuestions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryQuestions.swift; sourceTree = "<group>"; };
+		9EC8D9442017F04D00830BF9 /* Answers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Answers.swift; sourceTree = "<group>"; };
+		9EC8D94A2017F3E200830BF9 /* DestiniTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DestiniTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9EC8D94E2017F3E200830BF9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9EC8D9562018041D00830BF9 /* FullStory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FullStory.swift; sourceTree = "<group>"; };
+		9EC8D9582018047D00830BF9 /* Stories.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stories.swift; sourceTree = "<group>"; };
 		EBB1C73B1B9633A60011F5C3 /* Destini.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Destini.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EBB1C73F1B9633A60011F5C3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EBB1C7401B9633A60011F5C3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -29,6 +43,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		9EC8D9472017F3E200830BF9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		EBB1C7381B9633A60011F5C3 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -42,8 +63,9 @@
 		472385DD2017DE1D006A634B /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				472385E02017DEDB006A634B /* Story.swift */,
-				472385E22017DEFB006A634B /* StoryQuestions.swift */,
+				9EC8D9442017F04D00830BF9 /* Answers.swift */,
+				9EC8D9562018041D00830BF9 /* FullStory.swift */,
+				9EC8D9582018047D00830BF9 /* Stories.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -53,7 +75,6 @@
 			children = (
 				EBB1C7441B9633A60011F5C3 /* Main.storyboard */,
 				EBB1C7471B9633A60011F5C3 /* Images.xcassets */,
-				EBB1C7491B9633A60011F5C3 /* LaunchScreen.xib */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -67,10 +88,19 @@
 			name = Controller;
 			sourceTree = "<group>";
 		};
+		9EC8D94B2017F3E200830BF9 /* DestiniTests */ = {
+			isa = PBXGroup;
+			children = (
+				9EC8D94E2017F3E200830BF9 /* Info.plist */,
+			);
+			path = DestiniTests;
+			sourceTree = "<group>";
+		};
 		EBB1C7321B9633A60011F5C3 = {
 			isa = PBXGroup;
 			children = (
 				EBB1C73D1B9633A60011F5C3 /* Destini */,
+				9EC8D94B2017F3E200830BF9 /* DestiniTests */,
 				EBB1C73C1B9633A60011F5C3 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -79,6 +109,7 @@
 			isa = PBXGroup;
 			children = (
 				EBB1C73B1B9633A60011F5C3 /* Destini.app */,
+				9EC8D94A2017F3E200830BF9 /* DestiniTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -98,6 +129,7 @@
 			isa = PBXGroup;
 			children = (
 				EBB1C73F1B9633A60011F5C3 /* Info.plist */,
+				EBB1C7491B9633A60011F5C3 /* LaunchScreen.xib */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -105,6 +137,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		9EC8D9492017F3E200830BF9 /* DestiniTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9EC8D9512017F3E200830BF9 /* Build configuration list for PBXNativeTarget "DestiniTests" */;
+			buildPhases = (
+				9EC8D9462017F3E200830BF9 /* Sources */,
+				9EC8D9472017F3E200830BF9 /* Frameworks */,
+				9EC8D9482017F3E200830BF9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9EC8D9502017F3E200830BF9 /* PBXTargetDependency */,
+			);
+			name = DestiniTests;
+			productName = DestiniTests;
+			productReference = 9EC8D94A2017F3E200830BF9 /* DestiniTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		EBB1C73A1B9633A60011F5C3 /* Destini */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = EBB1C75A1B9633A70011F5C3 /* Build configuration list for PBXNativeTarget "Destini" */;
@@ -128,10 +178,16 @@
 		EBB1C7331B9633A60011F5C3 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0700;
+				LastSwiftUpdateCheck = 0920;
 				LastUpgradeCheck = 0900;
 				ORGANIZATIONNAME = "London App Brewery";
 				TargetAttributes = {
+					9EC8D9492017F3E200830BF9 = {
+						CreatedOnToolsVersion = 9.2;
+						DevelopmentTeam = Z5U25KAVP9;
+						ProvisioningStyle = Automatic;
+						TestTargetID = EBB1C73A1B9633A60011F5C3;
+					};
 					EBB1C73A1B9633A60011F5C3 = {
 						CreatedOnToolsVersion = 6.4;
 						DevelopmentTeam = 6SE5PH6F9G;
@@ -153,11 +209,19 @@
 			projectRoot = "";
 			targets = (
 				EBB1C73A1B9633A60011F5C3 /* Destini */,
+				9EC8D9492017F3E200830BF9 /* DestiniTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		9EC8D9482017F3E200830BF9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		EBB1C7391B9633A60011F5C3 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -171,18 +235,34 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		9EC8D9462017F3E200830BF9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		EBB1C7371B9633A60011F5C3 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				EBB1C7431B9633A60011F5C3 /* ViewController.swift in Sources */,
 				EBB1C7411B9633A60011F5C3 /* AppDelegate.swift in Sources */,
-				472385E12017DEDB006A634B /* Story.swift in Sources */,
-				472385E32017DEFB006A634B /* StoryQuestions.swift in Sources */,
+				9EC8D9452017F04D00830BF9 /* Answers.swift in Sources */,
+				9EC8D9592018047D00830BF9 /* Stories.swift in Sources */,
+				9EC8D9572018041D00830BF9 /* FullStory.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		9EC8D9502017F3E200830BF9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EBB1C73A1B9633A60011F5C3 /* Destini */;
+			targetProxy = 9EC8D94F2017F3E200830BF9 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		EBB1C7441B9633A60011F5C3 /* Main.storyboard */ = {
@@ -204,6 +284,56 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		9EC8D9522017F3E200830BF9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = Z5U25KAVP9;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = DestiniTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.charityyoungblood.DestiniTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Destini.app/Destini";
+			};
+			name = Debug;
+		};
+		9EC8D9532017F3E200830BF9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Z5U25KAVP9;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = DestiniTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.charityyoungblood.DestiniTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Destini.app/Destini";
+			};
+			name = Release;
+		};
 		EBB1C7581B9633A70011F5C3 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -338,6 +468,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		9EC8D9512017F3E200830BF9 /* Build configuration list for PBXNativeTarget "DestiniTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9EC8D9522017F3E200830BF9 /* Debug */,
+				9EC8D9532017F3E200830BF9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		EBB1C7361B9633A60011F5C3 /* Build configuration list for PBXProject "Destini" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
