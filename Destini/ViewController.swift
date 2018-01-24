@@ -19,9 +19,10 @@ class ViewController: UIViewController {
     // i.e. story1 is displayed > user selects answer1b > story
     let storyTime = FullStory()
     var storyNumber : Int = 0 // keeps track of what story number we are on
-    
+    // storyTime.allAnswers[answerNumber].answerText
     // what else will increase? need to keep track
     
+
     var answerNumber : Int = 0
     
     // UI Elements linked to the storyboard
@@ -43,8 +44,18 @@ class ViewController: UIViewController {
 
     func nextStory() {
         // this method will show the next story
+        storyNumber += 1
     }
     
+    func alternateEnding() {
+        storyNumber += 2
+    }
+    
+    func updateUI() {
+        // for the top button - display odd answers
+        // for the bottom button - display even answers
+        
+    }
     // ***STORY FORMAT***
         // if user selected answer1 > display story3
         // if user selected answer2 > display story2
@@ -52,23 +63,29 @@ class ViewController: UIViewController {
         // if user selected answer3 > display story1
         // if user selected answer4 > display story4
     
-        // if user selected answer5 > display story6
-        // if user selected answer6 > display story5
+        // if user selected answer5 > display story5
+        // if user selected answer6 > display story6
     
     // User presses one of the buttons
     @IBAction func buttonPressed(_ sender: UIButton) {
         // if top button is selected story number will increase
         if sender.tag == 1 {
+            nextStory()
+            topButton.setTitle(storyTime.allAnswers[answerNumber].answerText, for: UIControlState.selected)
         // play story number - depending on user
         // TODO Step 4: Write an IF-Statement to update the views
         }
+        else if sender.tag == 2 {
+            alternateEnding()
+        }
+    }
         // TODO Step 6: Modify the IF-Statement to complete the story
-        print(storyNumber)
+    
     
     }
     
 
 
 
-}
+
 
