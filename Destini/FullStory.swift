@@ -12,11 +12,11 @@ class FullStory {
 
         // create an array to pull strings from
         //  allStories = [story1, story2, story3, story4, story5, story6]
-        // allAnswers = [answer1a, answer1b, answer2a, answer2b, answer3a, answer3b]
+        // allAnswers = [answer1, answer2, answer3, answer4, answer5, answer6]
         var allStories = [Stories]()
         var allAnswers = [Answers]()
         
-        let story1 = "Your car has blown a tire on a winding road in the middle of nowhere with no cell phone reception. You decide to hitchhike. A rusty pickup truck rumbles to a stop next to you. A man with a wide brimmed hat with soulless eyes opens the passenger door for you and asks: \"Need a ride, boy?\"."
+        let storyStart = "Your car has blown a tire on a winding road in the middle of nowhere with no cell phone reception. You decide to hitchhike. A rusty pickup truck rumbles to a stop next to you. A man with a wide brimmed hat with soulless eyes opens the passenger door for you and asks: \"Need a ride, boy?\"."
         
         let story2 = "He nods slowly, unphased by the question."
         
@@ -28,29 +28,29 @@ class FullStory {
         
         let story6 = "You bond with the murderer while crooning verses of \"Can you feel the love tonight\". He drops you off at the next town. Before you go he asks you if you know any good places to dump bodies. You reply: \"Try the pier.\""
         
-        let answer1a = "I\'ll hop in. Thanks for the help!"
-        let answer1b = "Better ask him if he\'s a murderer first."
+        let answer1 = "I\'ll hop in. Thanks for the help!"
+        let answer2 = "Better ask him if he\'s a murderer first."
         
-        let answer2a = "At least he\'s honest. I\'ll climb in."
-        let answer2b = "Wait, I know how to change a tire."
+        let answer3 = "At least he\'s honest. I\'ll climb in."
+        let answer4 = "Wait, I know how to change a tire."
         
-        let answer3a = "I love Elton John! Hand him the cassette tape."
-        let answer3b = "It\'s him or me! You take the knife and stab him."
+        let answer5 = "I love Elton John! Hand him the cassette tape."
+        let answer6 = "It\'s him or me! You take the knife and stab him."
         
         
         init(){
-            allStories.append(Stories(theStory: story1))
+            allStories.append(Stories(theStory: storyStart))
             allStories.append(Stories(theStory: story2))
             allStories.append(Stories(theStory: story3))
             allStories.append(Stories(theStory: story4))
             allStories.append(Stories(theStory: story5))
             allStories.append(Stories(theStory: story6))
-            allAnswers.append(Answers(answer: answer1a))
-            allAnswers.append(Answers(answer: answer1b))
-            allAnswers.append(Answers(answer: answer2a))
-            allAnswers.append(Answers(answer: answer2b))
-            allAnswers.append(Answers(answer: answer3a))
-            allAnswers.append(Answers(answer: answer3b))
+            allAnswers.append(Answers(answer: answer1))
+            allAnswers.append(Answers(answer: answer2))
+            allAnswers.append(Answers(answer: answer3))
+            allAnswers.append(Answers(answer: answer4))
+            allAnswers.append(Answers(answer: answer5))
+            allAnswers.append(Answers(answer: answer6))
         }
         
         // theStory[0] = story1
