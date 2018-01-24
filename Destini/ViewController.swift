@@ -37,7 +37,7 @@ class ViewController: UIViewController {
         // update the storyTextView.text = display story1
         storyTextView.text = storyTime.allStories[storyNumber].theStoryText
         topButton.setTitle(storyTime.allAnswers[answerNumber].answerText, for: .normal)
-        bottomButton.setTitle(storyTime.allAnswers[answerNumber].answerText, for: .normal)
+        bottomButton.setTitle(storyTime.allAnswers[answerNumber + 1].answerText, for: .normal)
         
     }
 
