@@ -11,7 +11,7 @@ import Foundation
 class FullStory {
 
         // create an array to pull strings from
-        //  allStories = [story1, story2, story3, story4, story5, story6]
+        //  allStories = [storyStart, story1, story2, story3, story4, story5]
         // allAnswers = [answer1, answer2, answer3, answer4, answer5, answer6]
         var allStories = [Stories]()
         var allAnswers = [Answers]()
@@ -20,13 +20,14 @@ class FullStory {
         
         let story2 = "He nods slowly, unphased by the question."
         
-        let story3 = "As you begin to drive, the stranger starts talking about his relationship with his mother. He gets angrier and angrier by the minute. He asks you to open the glovebox. Inside you find a bloody knife, two severed fingers, and a cassette tape of Elton John. He reaches for the glove box."
+        // same as story3 - won't work
+        let story1 = "As you begin to drive, the stranger starts talking about his relationship with his mother. He gets angrier and angrier by the minute. He asks you to open the glovebox. Inside you find a bloody knife, two severed fingers, and a cassette tape of Elton John. He reaches for the glove box."
         
         let story4 = "What? Such a cop out! Did you know traffic accidents are the second leading cause of accidental death for most adult age groups?"
         
-        let story5 = "As you smash through the guardrail and careen towards the jagged rocks below you reflect on the dubious wisdom of stabbing someone while they are driving a car you are in."
+        let story6 = "As you smash through the guardrail and careen towards the jagged rocks below you reflect on the dubious wisdom of stabbing someone while they are driving a car you are in."
         
-        let story6 = "You bond with the murderer while crooning verses of \"Can you feel the love tonight\". He drops you off at the next town. Before you go he asks you if you know any good places to dump bodies. You reply: \"Try the pier.\""
+        let story5 = "You bond with the murderer while crooning verses of \"Can you feel the love tonight\". He drops you off at the next town. Before you go he asks you if you know any good places to dump bodies. You reply: \"Try the pier.\""
         
         let answer1 = "I\'ll hop in. Thanks for the help!"
         let answer2 = "Better ask him if he\'s a murderer first."

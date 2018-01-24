@@ -49,7 +49,7 @@ class ViewController: UIViewController {
         // if user selected answer1 > display story3
         // if user selected answer2 > display story2
     
-        // if user selected answer3 > display story3
+        // if user selected answer3 > display story1
         // if user selected answer4 > display story4
     
         // if user selected answer5 > display story6
