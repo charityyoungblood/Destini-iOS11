@@ -30,7 +30,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var bottomButton: UIButton!      // Has TAG = 2
     @IBOutlet weak var storyTextView: UILabel!
     
-    // TODO Step 5: Initialise instance variables here
+
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -38,7 +38,6 @@ class ViewController: UIViewController {
         storyTextView.text = storyTime.allStories[storyNumber].theStoryText
         topButton.setTitle(storyTime.allAnswers[answerNumber].answerText, for: .normal)
         bottomButton.setTitle(storyTime.allAnswers[answerNumber].answerText, for: .normal)
-        // TODO Step 3: Set the text for the storyTextView, topButton, bottomButton, and to T1_Story, T1_Ans1, and T1_Ans2
         
     }
 
@@ -97,7 +96,6 @@ class ViewController: UIViewController {
             bottomButton.setTitle(storyTime.allAnswers[answerNumber].answerText, for: .normal)
         }
     }
-        // TODO Step 6: Modify the IF-Statement to complete the story
     
     
     }
