@@ -16,9 +16,10 @@ class ViewController: UIViewController {
     // stories do not go sequentially - the user's answer will determine the next story number to display
     // note which selections go to which story numbers
     // story1 is first, at start of the game
-    // i.e. story1 is displayed > user selects answer1b > story
+    
     let storyTime = FullStory()
     var storyNumber : Int = 0 // keeps track of what story number we are on
+    
     // storyTime.allAnswers[answerNumber].answerText
     // what else will increase? need to keep track
     
@@ -38,28 +39,35 @@ class ViewController: UIViewController {
         storyTextView.text = storyTime.allStories[storyNumber].theStoryText
         topButton.setTitle(storyTime.allAnswers[answerNumber].answerText, for: .normal)
         bottomButton.setTitle(storyTime.allAnswers[answerNumber + 1].answerText, for: .normal)
-        
     }
 
     func nextStory() {
         // this method will show the next story
-        storyNumber = 6
+        if storyNumber <= storyTime.allStories.count {
+        storyNumber += 1
         storyTextView.text = storyTime.allStories[storyNumber].theStoryText
+    }
     }
     
     func alternateEnding() {
-        storyNumber += 2
+        if storyNumber <= storyTime.allStories.count {
+        storyNumber += 1
         storyTextView.text = storyTime.allStories[storyNumber].theStoryText
+    }
     }
     
     func changeTopButtonUI() {
+        if answerNumber <= storyTime.allAnswers.count {
         answerNumber += 2
         topButton.setTitle(storyTime.allAnswers[answerNumber].answerText, for: .normal)
     }
+    }
     
     func changeBottomButtonUI() {
+        if answerNumber <= storyTime.allAnswers.count {
         answerNumber += 1
         bottomButton.setTitle(storyTime.allAnswers[answerNumber].answerText, for: .normal)
+    }
     }
     
     // User presses one of the buttons
@@ -68,16 +76,21 @@ class ViewController: UIViewController {
         if sender.tag == 1 {
             // display story 7
             nextStory()
-         
+            changeTopButtonUI()
+            changeBottomButtonUI()
         // play story number - depending on user
             
         // TODO Step 4: Write an IF-Statement to update the views
         }
         else if sender.tag == 2 {
         // if bottom button is selected, story number will increase by 2
+            alternateEnding() // story numbers increase by 1 each time the bottom button is pressed 
+            changeTopButtonUI()
+            changeBottomButtonUI()
+        }
+        
+        else if sender.tag == 1 && answerNumber == storyNumber {
             
-            alternateEnding()
-     
         }
     }
     
