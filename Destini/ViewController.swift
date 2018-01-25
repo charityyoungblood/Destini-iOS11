@@ -43,54 +43,41 @@ class ViewController: UIViewController {
 
     func nextStory() {
         // this method will show the next story
-        storyNumber += 1
-        
+        storyNumber = 6
+        storyTextView.text = storyTime.allStories[storyNumber].theStoryText
     }
     
     func alternateEnding() {
         storyNumber += 2
-    }
-    
-    func answerOption1() {
-        // for the top button - display odd answers
-        answerNumber += 1
-    }
-    
-    func answerOption2() {
-        answerNumber += 2
-        // for the bottom button - display even answers
-    }
-    
-    func updateUI() {
         storyTextView.text = storyTime.allStories[storyNumber].theStoryText
-        
-        
     }
     
-    // ***STORY FORMAT***
-        // First story is story 1
-            // if user selects answer 1, display story 7 in background
-                // change top Button to answer 6
-                // change bottom Button to answer 7 
+    func changeTopButtonUI() {
+        answerNumber += 2
+        topButton.setTitle(storyTime.allAnswers[answerNumber].answerText, for: .normal)
+    }
+    
+    func changeBottomButtonUI() {
+        answerNumber += 1
+        bottomButton.setTitle(storyTime.allAnswers[answerNumber].answerText, for: .normal)
+    }
     
     // User presses one of the buttons
     @IBAction func buttonPressed(_ sender: UIButton) {
         // if top button is selected, answer number will increase by 1
         if sender.tag == 1 {
-            answerOption1()
+            // display story 7
             nextStory()
-            updateUI()
-            topButton.setTitle(storyTime.allAnswers[answerNumber].answerText, for: .normal)
+         
         // play story number - depending on user
             
         // TODO Step 4: Write an IF-Statement to update the views
         }
         else if sender.tag == 2 {
         // if bottom button is selected, story number will increase by 2
-            answerOption2()
+            
             alternateEnding()
-            updateUI()
-            bottomButton.setTitle(storyTime.allAnswers[answerNumber].answerText, for: .normal)
+     
         }
     }
     
