@@ -66,15 +66,12 @@ class ViewController: UIViewController {
         
         
     }
+    
     // ***STORY FORMAT***
-        // if user selected answer1 > display story3
-        // if user selected answer2 > display story2
-    
-        // if user selected answer3 > display story1
-        // if user selected answer4 > display story4
-    
-        // if user selected answer5 > display story5
-        // if user selected answer6 > display story6
+        // First story is story 1
+            // if user selects answer 1, display story 7 in background
+                // change top Button to answer 6
+                // change bottom Button to answer 7 
     
     // User presses one of the buttons
     @IBAction func buttonPressed(_ sender: UIButton) {
